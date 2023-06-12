@@ -431,7 +431,8 @@ ul, ol {
     fill: var(--cloud-color)
 }
 .subscribe-form {
-    display: inline-flex;
+    display: flex;
+    gap: 24px;
 }
 .subscribe-input {
     width: 264px;
@@ -444,14 +445,12 @@ ul, ol {
     padding: 8px 16px;
     font-weight: 400;
     font-size: 12px;
-    line-height: 2.0;
+    line-height: 1.5;
     letter-spacing: 0.04em;
     color: #FFFFFF;
 }
-.subscribe-label {
-    margin-right: 24px;
-}
 .subscribe-btn {
+    min-width: 165px;
     background: var(--iris-color);
     border-radius: 4px;
     border: none;
@@ -460,10 +459,11 @@ ul, ol {
     line-height: 1.5;
     display: flex;
     align-items: center;
-    text-align: center;
+    justify-content: center;
     letter-spacing: 0.04em;
     color: var(--white-color);
     padding: 8px 24px;
+    cursor: pointer;
 }
 .subscribe-icon {
     margin-left: 16px;
@@ -663,10 +663,11 @@ ul, ol {
     position: relative;
 }
 .modal-label {
+    display: block;
     font-weight: 400;
     font-size: 12px;
     line-height: 1.17;
-    letter-spacing: 0.01em;
+    letter-spacing: 0.04em;
     color: var(--light-slate);
     margin-bottom: 4px;
 }
@@ -711,7 +712,7 @@ ul, ol {
     letter-spacing: 0.04em;
     color: var(--light-slate);
 }
-.check-text span {
+.check {
     background-color: var(--white-color);
     width: 16px;
     height: 16px;
@@ -726,8 +727,8 @@ ul, ol {
                 border var(--transition),
                 background-color var(--transition);
 } 
-.modal-check:checked + .check-text span {
-    background-color: var(--iris-color);
+.modal-check:checked + .check {
+    background-color: var(--ocean-color);
     border: none;
     fill: var(--cloud-color);
     transition: background-color var(--transition),
@@ -738,7 +739,7 @@ ul, ol {
     color: var(--iris-color);
 }
 .modal-btn {
-    width: 169px;
+    min-width: 169px;
     height: 56px;
     background: var(--iris-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -751,4 +752,6 @@ ul, ol {
     color: var(--white-color);
     padding: 16px 32px;
     margin: 0 auto;
+    cursor: pointer;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
