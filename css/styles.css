@@ -704,8 +704,6 @@ ul, ol {
     margin-bottom: 24px;
 }
 .check-text {
-    display: flex;
-    align-items: center;
     font-weight: 400;
     font-size: 12px;
     line-height: 1.17;
@@ -727,7 +725,7 @@ ul, ol {
                 border var(--transition),
                 background-color var(--transition);
 } 
-.modal-check:checked + .check {
+.modal-check:checked + .check-text span {
     background-color: var(--ocean-color);
     border: none;
     fill: var(--cloud-color);
