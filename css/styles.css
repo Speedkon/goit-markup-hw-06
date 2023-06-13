@@ -725,7 +725,7 @@ ul, ol {
                 border var(--transition),
                 background-color var(--transition);
 } 
-.modal-check:checked + .check-text span {
+.modal-check:checked + .check-text .check {
     background-color: var(--ocean-color);
     border: none;
     fill: var(--cloud-color);
