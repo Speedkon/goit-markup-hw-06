@@ -449,6 +449,9 @@ ul, ol {
     letter-spacing: 0.04em;
     color: #FFFFFF;
 }
+.subscribe-input::placeholder {
+    color: var(--white-color);
+}
 .subscribe-btn {
     min-width: 165px;
     background: var(--iris-color);
@@ -464,6 +467,11 @@ ul, ol {
     color: var(--white-color);
     padding: 8px 24px;
     cursor: pointer;
+}
+.subscribe-btn:hover,
+.subscribe-btn:focus {
+    background-color: var(--ocean-color);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .subscribe-icon {
     margin-left: 16px;
@@ -678,6 +686,7 @@ ul, ol {
     margin-bottom: 16px;
 }
 .modal-comment {
+    display: block;
     width: 100%;
     height: 120px;
     border: 1px solid rgba(46, 47, 66, 0.4);
@@ -751,5 +760,10 @@ ul, ol {
     padding: 16px 32px;
     margin: 0 auto;
     cursor: pointer;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal-btn:hover,
+.modal-btn:focus {
+    background-color: var(--ocean-color);
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
